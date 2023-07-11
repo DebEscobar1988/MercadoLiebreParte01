@@ -35,13 +35,11 @@ píxeles.
 
 .footer__pie {
     margin-top: 10px;
-}
+    font-family: var(--cuerpos-de-texto);
 
-h4 {
-    font-family: var(--tipografiaMenu);
-    font-size: var(--cuerpos-de-texto);
-    
-    padding: 20px 120px 15px 15px;
+}
+.footer__pie h5{
+ padding:35px 60px 40px 5px;
 
 }
 @media(min-width: 361px){
