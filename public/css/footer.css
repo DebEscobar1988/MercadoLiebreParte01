@@ -1,0 +1,52 @@
+/* FOOTER */
+/* Los íconos tienen un tamaño de 2em y un margen inferior de separación de 10
+píxeles.
+ */
+
+ .footer {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.icono__cardFooter {
+
+    font-size: 2em;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    color: #1259c3;
+}
+
+.icono__giftFooter {
+
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    color: #1259c3;
+}
+
+.icono__segurityFooter {
+
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    color: #1259c3;
+}
+
+.footer__pie {
+    margin-top: 10px;
+}
+
+h4 {
+    font-family: var(--tipografiaMenu);
+    font-size: var(--cuerpos-de-texto);
+    
+    padding: 20px 120px 15px 15px;
+
+}
+@media(min-width:768px){
+
+
+
+
+}

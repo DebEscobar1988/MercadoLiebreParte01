@@ -1,0 +1,46 @@
+
+:root {
+
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --Grisclaro: #ebebeb;
+    --Verde: #39b54a;
+
+    --tipografiaMenu: 'Roboto', sans-serif;
+    /* tamaños tipográficos */
+
+    --cuerpos-de-texto: 12px;
+    --titulares: 24px;
+    /* basado en la última visita/ofertas */
+    --precios: 18px;
+    --descuentos: 16px;
+    --decripciones: 16px
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--tipografiaMenu);
+    font-size: var(--cuerpos-de-texto);
+}
+a {
+    font-family: var(--tipografiaMenu);
+    font-size: var(--cuerpos-de-texto);
+}
+
+h3 {
+    font-size: var(--decripciones);
+    color: var(--GrisOscuro);
+}
+
+h2 {
+    font-family: var(--tipografiaMenu);
+    font-size: var(--titulares);
+    color: var(--GrisOscuro);
+    margin-left: 15px;
+}
+body{
+    font-size: var(--cuerpos-de-texto);
+}

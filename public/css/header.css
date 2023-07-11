@@ -1,0 +1,195 @@
+/* HEADER */
+header {
+    width: 100%; 
+    background-color: #EAC926;
+}
+
+
+
+.logo__principal {
+    width: 50%;
+    margin-left: 10px;
+    padding: 25px 0 15px 25px;
+}
+
+.barra__cajancho {
+    width: 100%;
+
+}
+
+.barra__busqueda {
+    margin-left: 5%;
+    width:60%;
+    height: 20px;
+
+}
+
+.lupa-menu {
+    width:8%;
+    height: 21px;
+    margin-left: 2%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.icono__lupa {
+    font-size:7px ;
+    padding: 0 5px;
+    margin-left: 0;
+
+}
+
+.contenedor-compra {
+    width: 100%;
+}
+
+.icono__mano i{
+    font-size: 12px;
+    margin-left:10%;
+}
+
+.texto__mano {
+    font-size: var(--cuerpos-de-texto);
+
+}
+
+.lista__menu {
+    margin: 10px 0;
+    line-height: 20px;
+}
+
+.menu__header li {
+    list-style: none;
+    line-height: 20px;
+
+}
+
+.menu__header li a {
+    text-decoration: none;
+    color: #1a1919;
+  
+}
+
+.menu__header li a i {
+    margin-left: 3px;
+}
+
+.icono__burger i {
+    overflow: hidden;
+    background-color: var(--Celeste);
+    color: var(--Grisclaro);
+    margin-left: 45%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px 7px 7px;
+    padding: 10px;
+
+}
+
+/* boton amburguesa */
+.fas {
+    font-size: 15px;
+}
+
+@media(min-width:768px) {
+
+    /* HEADER */
+    header {
+        width: 100%;
+    }
+
+    .fondo {
+        width: 90%;
+        background-color: #EAC926;
+    }
+
+    .logo__principal {
+        width: 50%;
+        margin-left: 10px;
+        padding: 25px 0 15px 25px;
+    }
+
+    .barra__cajancho {
+        width: 100%;
+
+    }
+
+    .barra__busqueda {
+        margin-left: 5%;
+        border: 1px #080808 solid;
+        width: 55%;
+        height: 25px;
+
+    }
+
+    .lupa-menu {
+        width: 10%;
+        height: 30px;
+        text-align: left;
+        margin-left: 5%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+
+    }
+
+    .icono__lupa {
+        background-size: 2em;
+        padding: 6px 8px;
+        margin-left: 0;
+
+    }
+
+    .contenedor-compra {
+        width: 100%;
+    }
+
+    .icono__mano {
+        background-image: 2em;
+        margin-left: 15%;
+    }
+
+    .texto__mano {
+        font-size: var(--cuerpos-de-texto);
+
+    }
+
+    .lista__menu {
+        margin: 10px 0;
+        line-height: 20px;
+    }
+
+    .menu__header li {
+        list-style: none;
+        line-height: 20px;
+
+    }
+
+    .menu__header li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+
+    }
+
+    .menu__header li a i {
+        margin-left: 3px;
+    }
+
+    .icono__burger i {
+        overflow: hidden;
+        background-color: var(--Celeste);
+        color: var(--Grisclaro);
+        margin-left: 45%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 7px 7px 7px;
+        padding: 10px;
+
+    }
+
+    .fas {
+       font-size: 10px;
+
+    }
+}
