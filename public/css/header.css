@@ -51,7 +51,7 @@ header {
 }
 
 .texto__mano {
-    font-size: var(--cuerpos-de-texto);
+    font-size: var(--descripciones);
 
 }
 
@@ -92,7 +92,6 @@ header {
 /* boton amburguesa */
 .fas {
     font-size: 15px;
-   
 }
 
 @media(min-width:361px) {
@@ -114,23 +113,17 @@ header {
 
     .barra__cajancho {
         width: 100%;
-        background-color: aqua;
       
-
     }
  
-  
-    .fas {
-        font-size: 13px;
-       
-    }
+  /* tamaño de icono mano, canasto flecha y lupa */
+  /* traen un peso de 900 */
+        .fas {
+        font-size: 13px;} 
 
-    .icono__lupa {
+   .icono__lupa {
         font-size:10px ;
-      
-  
-    
-    }
+    }  
 
     .contenedor-compra {
         width: 100%;
@@ -141,8 +134,7 @@ header {
     }
 
     .texto__mano {
-        font-size: var(--cuerpos-de-texto);
-
+        font-size: var(--descripciones);
     }
  
     .lista__menu {
@@ -151,6 +143,7 @@ header {
   
     .menu__header li {
         list-style: none; 
+        line-height: 15px;
     }
 
     .menu__header li a {

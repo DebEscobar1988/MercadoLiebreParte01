@@ -16,7 +16,7 @@
     /* basado en la última visita/ofertas */
     --precios: 18px;
     --descuentos: 16px;
-    --decripciones: 16px
+    --descripciones: 16px
 }
 * {
     margin: 0;
@@ -31,7 +31,7 @@ a {
 }
 
 h3 {
-    font-size: var(--decripciones);
+    font-size: var(--descripciones);
     color: var(--GrisOscuro);
     display: none;
 }

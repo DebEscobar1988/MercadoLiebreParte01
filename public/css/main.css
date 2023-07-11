@@ -1,15 +1,20 @@
 /* MAIN */
+main{
+ background-color: var(--Grisclaro);
 
+}
 .main__contenedor-cuerpo{
     width: 90%;
     margin: 0 auto;
+
 }
 
 .main__contenedor-banner {
     width: 100%;
-}
+  }
 .main__contenedor-banner img{
-    width: 100%;
+    width: 100%;  
+   
 }
 
 .main__contenedor--articulo-01{
@@ -51,7 +56,6 @@
 .main__descuentos{
     font-size: var(--descuentos);
     color: var(--Verde);
-   
 }
 
  
