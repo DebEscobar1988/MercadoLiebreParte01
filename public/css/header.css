@@ -68,6 +68,7 @@ header {
 .menu__header li a {
     text-decoration: none;
     color: #1a1919;
+    display: none;
   
 }
 
