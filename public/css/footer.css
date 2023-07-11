@@ -44,7 +44,13 @@ h4 {
     padding: 20px 120px 15px 15px;
 
 }
-@media(min-width:768px){
+@media(min-width: 361px){
+
+
+
+
+}
+@media(min-width: 769px){
 
 
 

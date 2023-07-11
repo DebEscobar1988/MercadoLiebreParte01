@@ -33,6 +33,7 @@ a {
 h3 {
     font-size: var(--decripciones);
     color: var(--GrisOscuro);
+    display: none;
 }
 
 h2 {
