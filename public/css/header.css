@@ -25,20 +25,14 @@ header {
 }
 
 .lupa-menu {
-
+    background-color: white;
     height: 21px;
-    margin-left: 2%;
-    margin-top: 5px;
+    margin-left: 1%;
+    margin-top: -5px;
     margin-bottom: 10px;
 
 }
 
-.icono__lupa {
-    font-size:7px ;
-    padding: 0 5px;
-    margin-left: 0;
-
-}
 
 .contenedor-compra {
     width: 100%;
@@ -94,26 +88,49 @@ header {
     font-size: 15px;
 }
 
+
+/* --------ACÁ COMIENZA VISTA TABLET---------------- */
+
+
 @media(min-width:361px) {
 
     /* HEADER */
     header {
         width: 100%;
     }
-
+   
     .fondo {
         width: 90%;
         background-color: #EAC926;
     }
 
     .logo__principal {
-        width: 70%;
+        width: 62%;
         padding: 20px 0 0 20px;
     }
 
     .barra__cajancho {
         width: 100%;
-      
+   
+    } 
+    .barra__busqueda{
+        margin-left:3%;
+        width: 43%;
+        height: 15px;
+     }
+     
+    .lupa-menu {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 1%;
+        height: 17px;
+        width: 17px;
+        cursor: pointer;
+        
+    }
+    .lupa-menu i{
+        padding: 0;
+           font-size:10px 
     }
  
   /* tamaño de icono mano, canasto flecha y lupa */
@@ -121,22 +138,15 @@ header {
         .fas {
         font-size: 13px;} 
 
-   .icono__lupa {
-        font-size:10px ;
-    }  
-
     .contenedor-compra {
         width: 100%;
     }
 
     .icono__mano {
-        margin-left: 15%;
-    }
+      margin-left: 25%;}
+     
 
-    .texto__mano {
-        font-size: var(--descripciones);
-    }
- 
+  
     .lista__menu {
         margin: 5px 0;
     }
@@ -160,5 +170,36 @@ header {
     .icono__burger i {
       display: none; 
     }
+
+}
+
+
+/* -----ACÁ COMIENZA LA VISTA DESKTOP -------*/
+@media(min-width: 769px){
+
+.icono__mano{
+    margin-left:55%;
+}
+
+.barra__busqueda{
+   width: 40%;
+   height: 20px;
+ }
+ .lupa-menu {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    height:20px;
+    width: 19px;
+    cursor: pointer;
+    
+}
+.lupa-menu i{
+    padding: 0;
+    font-size:10px 
+}
+
+
+
 
 }

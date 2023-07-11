@@ -36,12 +36,7 @@ h3 {
     display: none;
 }
 
-h2 {
-    font-family: var(--tipografiaMenu);
-    font-size: var(--titulares);
-    color: var(--GrisOscuro);
-    margin-left: 15px;
-}
+
 body{
     font-size: var(--cuerpos-de-texto);
 }
