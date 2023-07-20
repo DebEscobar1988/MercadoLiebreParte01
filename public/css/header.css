@@ -1,47 +1,69 @@
 /* HEADER */
-header {
-    width: 100%; 
+
+
+.header__section-contenedora {
+
     background-color: #EAC926;
+
 }
 
-
-
-.logo__principal {
+/* CAJA PADRE DEL LOGO MERCADOLIEBRE Y LA BARRA */
+.header__div-contenedor {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+/* IMAGEN LOGO */
+.header__div-contenedor img {
+    display: flex;
     width: 50%;
-    margin-left: 10px;
-    padding: 25px 0 15px 25px;
+    height:45px ;
+    margin: 15px 10px 10px 2px;
+    padding: 5px;
+   
+}
+/* CAPA PADRE DEL LOGO, BARRA Y MANO */
+.header__padre--x3{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
-.barra__cajancho {
-    width: 100%;
+/* BARRA  */
+.header__barra-lupa input {
+width: 85%;
+padding: 10px;
+padding-right: 20px;
+border-radius: 5px;
+border: none;
+}
+/* CAJA PADRE BARRA */
+.header__barra-lupa {
+    width: 50%;
+    height: 70%;
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   top:20px;
+
+}
+.header__div-contenedor div{
+    height: 50%;
+}
+/* LUPA */
+.header__barra-lupa button {
+position: relative;
+left:-21px;
+border: none;
 
 }
 
-.barra__busqueda {
-    margin-left: 5%;
-    width:60%;
-    height: 20px;
 
-}
+.icono__mano  {
+ display: flex;
+ position: relative;
+ left: 55px;
 
-.lupa-menu {
-    background-color: white;
-    height: 21px;
-    margin-left: 1%;
-    margin-top: -5px;
-    margin-bottom: 10px;
-
-}
-
-
-.contenedor-compra {
-    width: 100%;
-}
-
-.icono__mano i{
-    font-size: 12px;
-    margin-left:10%;
-    margin-bottom: 15px;
 }
 
 .texto__mano {
@@ -64,95 +86,114 @@ header {
     text-decoration: none;
     color: #1a1919;
     display: none;
-  
+
 }
 
 .menu__header li a i {
     margin-left: 3px;
 }
 
+.header__caja-padre-burger {
+    background-color: #EAC926;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .icono__burger i {
-    overflow: hidden;
+
     background-color: var(--Celeste);
     color: var(--Grisclaro);
-    margin-left: 45%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 7px 7px 7px;
     padding: 10px;
-    
+
 }
 
 /* boton amburguesa */
 .fas {
-    font-size: 15px;
+    font-size: 15px; 
+
 }
 
 
 /* --------ACÁ COMIENZA VISTA TABLET---------------- */
 
 
-@media(min-width:361px) {
+@media(min-width:768px) {
 
     /* HEADER */
     header {
         width: 100%;
     }
-   
-    .fondo {
-        width: 90%;
-        background-color: #EAC926;
+/* CAJA PADRE DEL LOGO, LA BARRA Y LA MANO CON SU DESCRIPCIÓN */
+    .header__padre--x3 {
+        display: flex;
+        justify-content: center;
+        background-color: aquamarine;
     }
+/* CAJA PADRE DEL LOGO ML */
+    .header__div-contenedor img {
+        width: 246px;
+        background-color: crimson;
+        padding-left: 5px;
+        margin-left: 10px;
 
-    .logo__principal {
-        width: 62%;
-        padding: 20px 0 0 20px;
     }
-
-    .barra__cajancho {
-        width: 100%;
-   
-    } 
-    .barra__busqueda{
-        margin-left:3%;
+/* CAJA PADRE DE LA BARRA BUSCADORA */
+    .header__barra-lupa {
+        margin-left: 3%;
         width: 43%;
-        height: 15px;
-     }
-     
-    .lupa-menu {
-        margin-top: 5px;
-        margin-bottom: 10px;
-        margin-left: 1%;
-        height: 17px;
-        width: 17px;
+        height: 100%;
+        padding: 35px;
+        margin: 0px;
+        width: 246px;
         cursor: pointer;
-        
-    }
-    .lupa-menu i{
-        padding: 0;
-           font-size:10px 
-    }
- 
-  /* tamaño de icono mano, canasto flecha y lupa */
-  /* traen un peso de 900 */
-        .fas {
-        font-size: 13px;} 
+        background-color: violet;
 
-    .contenedor-compra {
-        width: 100%;
+    }
+    /* CAJA PADRE DE LA LUPA */
+    .header__barra-lupa i{
+        padding-top: 6px;
+        margin-bottom: 16px;
+        height: 15px;
+        border-radius: 5px;
+        width: 16px;
+        font-size: 15px
+    }
+    
+
+    /* tamaño de icono mano, canasto flecha y lupa */
+    /* traen un peso de 900 */
+    /* TAMAÑO DE LOS ICONOS /MANNO/FLECHA/CANASTO */
+    .fas {
+        font-size: 13px;
     }
 
-    .icono__mano {
-      margin-left: 25%;}
-     
+    .icono__mano{
+        background-color: deeppink;
+        width: 246px;
+    }
+    .icono__mano i {
+        padding-top: 25px;
+        margin: 25px 0px 25px 5px;
+        width: 20px;
+        background-color: darkorange;
+
+    }
 
   
+
+
+
     .lista__menu {
         margin: 5px 0;
     }
-  
+
     .menu__header li {
-        list-style: none; 
+        list-style: none;
         line-height: 15px;
     }
 
@@ -162,42 +203,43 @@ header {
         display: block;
     }
 
-    .menu__header li a i {
-      margin-left: 3px;
-      
+    .header__menu-ul {
+        justify-content: space-between;
     }
 
     .icono__burger i {
-      display: none; 
+        display: none;
     }
 
 }
 
 
 /* -----ACÁ COMIENZA LA VISTA DESKTOP -------*/
-@media(min-width: 769px){
+@media(min-width: 769px) {
 
-.icono__mano{
-    margin-left:55%;
-}
+    .icono__mano {
+        margin-left: 55%;
+    }
 
-.barra__busqueda{
-   width: 40%;
-   height: 20px;
- }
- .lupa-menu {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: 1%;
-    height:20px;
-    width: 19px;
-    cursor: pointer;
-    
-}
-.lupa-menu i{
-    padding: 0;
-    font-size:10px 
-}
+    .barra__busqueda {
+        width: 40%;
+        height: 20px;
+    }
+
+    .lupa-menu {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 1%;
+        height: 20px;
+        width: 19px;
+        cursor: pointer;
+
+    }
+
+    .lupa-menu i {
+        padding: 0;
+        font-size: 10px
+    }
 
 
 

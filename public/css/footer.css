@@ -42,7 +42,8 @@ píxeles.
  padding:35px 60px 40px 5px;
 
 }
-@media(min-width: 361px){
+/* TABLE */
+@media(min-width: 768px){
 
 
 
