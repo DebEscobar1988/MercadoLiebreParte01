@@ -1,4 +1,5 @@
 /* MAIN */
+
 main {
     background-color: var(--Grisclaro);
     border-bottom: solid 1px var(--Grisclaro);
@@ -95,7 +96,7 @@ h2 {
 /*------ ACÁ COMIENZA LA VISTA TABLET----------- */
 
 
-@media(min-width:768px) {
+@media(min-width:481px) {
 
     /* MAIN */
 
@@ -162,4 +163,4 @@ h2 {
 }
 
 /* -----ACÁ COMIENZA LA VISTA DESKTOP -------*/
-@media(min-width: 1240px) {}
+@media(min-width: 1024px) {}

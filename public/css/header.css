@@ -4,8 +4,8 @@
 .header__section-contenedora {
     width: 100%;
     background-color: #EAC926;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 
 /* CAPA PADRE DEL LOGO, BARRA Y MANO */
@@ -17,12 +17,12 @@
 /* CAJA PADRE DEL LOGO MERCADOLIEBRE Y LA BARRA */
 .header__div-contenedor {
     display: flex;
-
+    align-content: space-between;
 }
 
 /* IMAGEN LOGO */
 .header__div-contenedor img {
-    display: flex;
+    /* display: flex; */
     width: 50%;
     height: 45px;
     margin: 15px 5px 10px 10px;
@@ -58,8 +58,8 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    right: 30%;
     left: 55px;
-
 }
 
 .texto__mano {
@@ -115,16 +115,100 @@
 }
 
 
-/* ------------------------------------ACÁ COMIENZA VISTA TABLET-------------------------------------------------- */
+/* -------------------ACÁ COMIENZA VISTA TABLET-------------------------------------------------- */
 
 
-@media(min-width:768px) {
+@media(min-width: 481px) {
+
+    /* HEADER */
+    header {
+        width: 100%;
+        height: 100%;
+        background-color: var(--Amarillo);
+    }
+
+    .header__padre--x3 {
+        width: 125%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightseagreen;
+    }
+
+    .header__div-contenedor {
+        width: 45%;
+        background-color: chocolate;
+    }
+
+    .header__div-contenedor img {
+        display: inline;
+        width: 45%;
+        background-color: crimson;
+    }
+
+
+    .header__section-contenedora {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header__section-contenedora {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__barra-lupa {
+        display: flex;
+        /* position: relative; */
+        border: dotted 3px green;
+        width: 50%;
+        left: 150px;
+        top: 15px;
+    }
+
+    /* BARRA  */
+    .header__barra-lupa input {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        top: 30px;
+        left: 30px;
+        margin: 15px 0px 8px 15px;
+        padding: 8px;
+        border-radius: 6px;
+        border: none;
+    }
+
+
+    .icono__mano{
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   right: 30%;
+    }
+
+    .header__menu-ul li a {
+        display: inline-block;
+        flex-wrap: wrap;
+        top: 45px;
+
+    }
+
+
+    .menu__header li a {
+        display: inline-block;
+    }
+
+    .header__caja-padre-burger p {
+        display: none;
+    }
 
 
 
 
-    
+
+
+
 }
 
-
-   
+@media(min-width: 1024px) {}
