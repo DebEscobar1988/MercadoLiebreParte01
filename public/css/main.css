@@ -72,13 +72,15 @@ h2 {
 .main__precio {
     font-size: var(--precios);
     width: 30%;
-
+    /* padding-right: 40px; */
 }
 
 .main__descuentos {
     font-size: var(--descuentos);
     color: var(--Verde);
     width: 70%;
+    padding-left: 15px;
+    text-transform: uppercase;
 }
 
 /* CAJA PADRE PARA PRECIO Y DESCUENTO */
