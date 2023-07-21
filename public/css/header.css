@@ -1,170 +1,205 @@
 /* HEADER */
-
-
-.header__section-contenedora {
-    width: 100%;
+header {
+    width: 100%; 
     background-color: #EAC926;
 }
 
-/* CAJA PADRE DEL LOGO MERCADOLIEBRE Y LA BARRA */
-.header__div-contenedor {
-    display: flex;
-    justify-content: space-between;
-}
 
-/* IMAGEN LOGO */
-.header__div-contenedor img {
+
+.logo__principal {
     width: 50%;
-    height: 45px;
-    margin: 15px 5px 10px 2px;
-    padding: 5px;
+    margin-left: 10px;
+    padding: 25px 0 15px 25px;
 }
 
-.header__barra-lupa {
-    width: 50%;
-}
-
-/* BARRA  */
-.header__barra-lupa input {
-    margin: 15px 5px 10px 2px;
-    padding: 12px 5px;
-    border-radius: 6px;
-    border: none;
+.barra__cajancho {
+    width: 100%;
 
 }
 
-/* BOTÓN */
-.header__barra-lupa button {
-    position: relative;
-    left: 130px;
-    bottom: 35px;
-    border: none;
+.barra__busqueda {
+    margin-left: 5%;
+    width:60%;
+    height: 20px;
+
+}
+
+.lupa-menu {
+    background-color: white;
+    height: 21px;
+    margin-left: 1%;
+    margin-top: -5px;
+    margin-bottom: 10px;
+
+}
+
+
+.contenedor-compra {
+    width: 100%;
 }
 
 .icono__mano i{
-    width:100%;
+    font-size: 12px;
+    margin-left:10%;
+    margin-bottom: 15px;
+}
 
+.texto__mano {
+    font-size: var(--descripciones);
 
-/* SE ESCONDE EL MENU */
-.header__menu{
+}
+
+.lista__menu {
+    margin: 10px 0;
+    line-height: 20px;
+}
+
+.menu__header li {
+    list-style: none;
+    line-height: 20px;
+
+}
+
+.menu__header li a {
+    text-decoration: none;
+    color: #1a1919;
     display: none;
+  
 }
 
-.header__caja-padre-burger {
-    width: 100%;
-    display: block;
-    background-color: #EAC926;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
+.menu__header li a i {
+    margin-left: 3px;
 }
 
-.icono__burger{
-
+.icono__burger i {
+    overflow: hidden;
     background-color: var(--Celeste);
     color: var(--Grisclaro);
+    margin-left: 45%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 7px 7px 7px;
     padding: 10px;
-
+    
 }
 
 /* boton amburguesa */
 .fas {
     font-size: 15px;
-
 }
 
 
-/* -------------------ACÁ COMIENZA VISTA TABLET-------------------------------------------------- */
+/* --------ACÁ COMIENZA VISTA TABLET---------------- */
 
 
-@media(min-width: 481px) {
+@media(min-width:361px) {
 
     /* HEADER */
-    .header__div-contenedor img {
-        display: inline;
-        width: 100px;
-        height: 100px;
-        margin: 0px;
-        padding: 0px;
-        /* esta bien, es la caja del logo */
-        border: dashed 0.2px rgb(250, 6, 108);
+    header {
+        width: 100%;
+    }
+   
+    .fondo {
+        width: 90%;
+        background-color: #EAC926;
     }
 
-
-    .header__barra-lupa {
-        border: dotted 1px green;
-        width: 30%;
-        height: 100px;
-        left: 9px;
-
+    .logo__principal {
+        width: 62%;
+        padding: 20px 0 0 20px;
     }
 
-    /* BARRA  */
-    .header__barra-lupa input {
-        width: 120px;
-        border: 8px;
-        margin: 40px 1px;
-        padding: 2px;
-        border-radius: 1.5px;
+    .barra__cajancho {
+        width: 100%;
+   
+    } 
+    .barra__busqueda{
+        margin-left:3%;
+        width: 43%;
+        height: 15px;
+     }
+     
+    .lupa-menu {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 1%;
+        height: 17px;
+        width: 17px;
+        cursor: pointer;
+        
+    }
+    .lupa-menu i{
+        padding: 0;
+           font-size:10px 
+    }
+ 
+  /* tamaño de icono mano, canasto flecha y lupa */
+  /* traen un peso de 900 */
+        .fas {
+        font-size: 13px;} 
+
+    .contenedor-compra {
+        width: 100%;
     }
 
-    /* BOTÓN */
-    .header__barra-lupa button {
-        border: solid 1px grey;
-        border-radius: 4px;
-        height: 18px;
-        left: 125px;
-        bottom: 58px;
+    .icono__mano {
+      margin-left: 25%;}
+     
+
+  
+    .lista__menu {
+        margin: 5px 0;
+    }
+  
+    .menu__header li {
+        list-style: none; 
+        line-height: 15px;
     }
 
-
-
-    /*  LUPA*/
-    .header__barra-lupa i {
-        position: relative;
-        left: -1px;
-        padding: 1.5px;
+    .menu__header li a {
+        text-decoration: none;
+        color: black;
+        display: block;
     }
 
-
-    .texto-mano-peso {
-        display: flex;
-        justify-content: space-between;
+    .menu__header li a i {
+      margin-left: 3px;
+      
     }
 
+    .icono__burger i {
+      display: none; 
+    }
 
 }
 
-/* NAV QUE ENCIERRA A LAS LI */
-.header__menu-ul {
-    width: 100%;
+
+/* -----ACÁ COMIENZA LA VISTA DESKTOP -------*/
+@media(min-width: 769px){
+
+.icono__mano{
+    margin-left:55%;
 }
 
-.header__menu-ul li {
-    display: flex;
-    flex-wrap: wrap;
-    top: 45px;
+.barra__busqueda{
+   width: 40%;
+   height: 20px;
+ }
+ .lupa-menu {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    height:20px;
+    width: 19px;
+    cursor: pointer;
+    
+}
+.lupa-menu i{
+    padding: 0;
+    font-size:10px 
 }
 
-/* PARA TRAER LAS UL LI */
-.menu__header li a {
-    display: inline-block;
-}
-
-/* CAJA DE LA BURGER */
-.header__caja-padre-burger p {
-    display: none;
-}
-
-
-
-
 
 
 
 }
-
-@media(min-width: 1024px) {}
