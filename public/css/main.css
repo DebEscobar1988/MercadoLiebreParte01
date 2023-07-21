@@ -119,19 +119,26 @@ div .main__descuentos {
     }
 
     .main__icono-carro {
-        display: grid;
-        padding: 5px 5px;
+        display: block;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
         padding-right: 15px;
         margin: 2px;
         border-radius: 40px;
+        position: absolute;
+        right: 35px;
+        top: 681px;
         border: solid 1.5px #39b54a;
+        background-color: #FFF;
     }
-
+    
+    /* no tocar */
     .main__icono-carro i {
+    
         color: var(--Verde);
-        font-size: 20px;
-        height: 35px;
-        margin: 1.5px;
+        font-size: 16px;
+    
     }
 
     .main__contenedor-precio {

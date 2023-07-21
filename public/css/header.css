@@ -5,47 +5,54 @@ header {
 }
 
 
-.contenedor__padre{
+.contenedor__padre {
     display: flex;
-     flex-wrap: wrap; 
+    flex-wrap: wrap;
     text-align: left;
     justify-content: space-between;
     width: 100%;
     padding: 25px;
 }
-.contenedor__logo{
+
+.contenedor__logo {
     width: 50%;
 }
-.logo__principal{
+
+.logo__principal {
     width: 95%;
 
 }
+
 .barra__cajancho {
     width: 50%;
 
 }
-.barra__cajancho input{
+
+.barra__cajancho input {
     position: relative;
     padding: 1px;
     border: 0;
 }
+
 .barra__busqueda {
- height: 30px;
- padding:5px 4px;
-border-radius:5px 5px 5px 5px;
+    height: 30px;
+    padding: 5px 4px;
+    border-radius: 5px 5px 5px 5px;
 }
-.barra__busqueda button{
+
+.barra__busqueda button {
     position: absolute;
 }
+
 .lupa-menu {
     background-color: white;
     height: 25px;
     margin-left: 90%;
-    border-radius:0 5px  5px 0 ;
+    border-radius: 0 5px 5px 0;
     border: none;
     color: var(--GrisOscuro);
-    position:relative;
-    top:-28px;
+    position: relative;
+    top: -28px;
     right: 0;
 }
 
@@ -54,7 +61,7 @@ border-radius:5px 5px 5px 5px;
     width: 100%;
 }
 
-.contenedor__padre p{
+.contenedor__padre p {
     text-align: center;
 }
 
@@ -78,7 +85,7 @@ border-radius:5px 5px 5px 5px;
     text-decoration: none;
     color: #1a1919;
     display: none;
-  
+
 }
 
 .menu__header li a i {
@@ -94,7 +101,7 @@ border-radius:5px 5px 5px 5px;
     margin-bottom: 10px;
     border-radius: 7px 7px 7px;
     padding: 10px;
-    
+
 }
 
 /* boton amburguesa */
@@ -108,110 +115,128 @@ border-radius:5px 5px 5px 5px;
 
 @media(min-width:361px) {
 
+    /* tamaño de icono mano, canasto flecha y lupa */
+    /* traen un peso de 900 */
+    .fas {
+        font-size: 65%;
+    }
+
+
     /* HEADER */
     header {
         width: 100%;
     }
-   
-    .fondo {
-        width: 90%;
-        background-color: #EAC926;
+
+
+    /* CONTENEDOR DE LOS 3 */
+    .contenedor__padre {
+        display: inline-block;
+        display: flex;
+        padding: 5px;
+    }
+
+    /* CAJA DEL LOGO */
+    .contenedor__padre .contenedor__logo {
+        width: 120px;
     }
 
     .logo__principal {
-        width: 62%;
+        width: 72%;
         padding: 20px 0 0 20px;
     }
 
-    .barra__cajancho {
-        width: 100%;
-   
-    } 
-    .barra__busqueda{
-        margin-left:3%;
-        width: 43%;
-        height: 15px;
-     }
-     
-    .lupa-menu {
+    /* CAJA DE LA BARRA */
+    .barra__cajancho .barra__busqueda {
+        width:50%;
+
+    }
+    .barra__cajancho
+
+    .barra__busqueda {
+        /* margin-right: 118%; */
+        /* width: 190px; */
+        /* height: 15px; */
+    }
+
+    p .icono__mano {
+        width: 120px;
+        margin-left: 20px;
+    }
+
+    .lista__menu{
+        top: 28px;
+    }
+    .lupa-menu i{
         margin-top: 5px;
-        margin-bottom: 10px;
-        margin-left: 1%;
         height: 17px;
         width: 17px;
         cursor: pointer;
-        
+
     }
-    .lupa-menu i{
-        padding: 0;
-           font-size:10px 
-    }
+
  
-  /* tamaño de icono mano, canasto flecha y lupa */
-  /* traen un peso de 900 */
-        .fas {
-        font-size: 13px;} 
 
-    .contenedor-compra {
-        width: 100%;
+
+
+
+    .menu__header .lista__menu {
+        width: 100%;  
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 
-    .icono__mano {
-      margin-left: 25%;}
-     
-
-  
     .lista__menu {
         margin: 5px 0;
     }
-  
+
     .menu__header li {
-        list-style: none; 
+        list-style: none;
         line-height: 15px;
     }
 
     .menu__header li a {
         text-decoration: none;
         color: black;
-        display: block;
+        display: flex;
+     
     }
 
-    .menu__header li a i {
-      margin-left: 3px;
-      
-    }
+   
 
     .icono__burger i {
-      display: none; 
+        display: none;
     }
 
 }
 
 
 /* -----ACÁ COMIENZA LA VISTA DESKTOP -------*/
-@media(min-width: 769px){
+@media(min-width: 769px) {
 
-.icono__mano{
-    margin-left:55%;
-}
+    .icono__mano {
+        margin-left: 55%;
+    }
 
-.barra__busqueda{
-   width: 40%;
-   height: 20px;
- }
- .lupa-menu {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: 1%;
-    height:20px;
-    width: 19px;
-    cursor: pointer;
-    
-}
-.lupa-menu i{
-    padding: 0;
-    font-size:10px 
-}
+    .barra__busqueda {
+        width: 40%;
+        height: 20px;
+    }
+
+    .lupa-menu {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 1%;
+        height: 20px;
+        width: 19px;
+        cursor: pointer;
+
+    }
+
+    .lupa-menu i {
+        padding: 0;
+        font-size: 10px
+    }
 
 
 
