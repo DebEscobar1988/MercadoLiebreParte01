@@ -1,7 +1,7 @@
 /* MAIN */
 main {
     background-color: var(--Grisclaro);
-    border-bottom: solid 1px var(--Grisclaro);
+ border-bottom: solid 1px var(--Grisclaro); 
 }
 
 .main__contenedor-cuerpo {
@@ -20,10 +20,9 @@ main {
 
 
 .main__contenedor--articulo-01 {
+ margin-bottom: 10px; 
 
-    margin-bottom: 10px;
-    padding: 0 15px;
-
+padding: 0 15px;
 }
 
 .main__contenedor--articulo-02 {
@@ -35,7 +34,7 @@ h2 {
     font-family: var(--tipografiaMenu);
     font-size: var(--titulares);
     color: var(--GrisOscuro);
-    margin-left: 10px;
+
 }
 
 
@@ -48,8 +47,8 @@ h2 {
     margin: 2px;
     border-radius: 40px;
     position: absolute;
-    right: 35px;
-    top: 535px;
+    right: 20px;
+    top: -20px;
     border: solid 1.5px #39b54a;
     background-color: #FFF;
 }
@@ -59,27 +58,18 @@ h2 {
 
     color: var(--Verde);
     font-size: 16px;
-
 }
 
 .main__contenedor-precio {
     background-color: white;
     padding: 15px;
     border-top: solid 1px var(--Grisclaro);
-
+    position: relative;
 }
 
-.main__precio {
-    display: inline-block;
-    font-size: var(--precios);
-    width: 30%;
-}
-div .main__descuentos {
-   padding: 0 10px;
-}
+
 .main__descuentos {
-    display: inline-block;
-    width: 70%;
+  
     font-size: var(--descuentos);
     color: var(--Verde);
 }
@@ -88,7 +78,7 @@ div .main__descuentos {
 /*------ ACÁ COMIENZA LA VISTA TABLET----------- */
 
 
-@media(min-width:361px) {
+@media(min-width:481px) {
 
     /* MAIN */
 
@@ -127,8 +117,8 @@ div .main__descuentos {
         margin: 2px;
         border-radius: 40px;
         position: absolute;
-        right: 35px;
-        top: 681px;
+        right:20px;
+        top: -20px;
         border: solid 1.5px #39b54a;
         background-color: #FFF;
     }

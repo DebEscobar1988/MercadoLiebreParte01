@@ -2,78 +2,79 @@
 header {
     width: 100%;
     background-color: #EAC926;
+    padding: 10px;
 }
 
 
 .contenedor__padre {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
-    justify-content: space-between;
-    width: 100%;
-    padding: 25px;
+    justify-content: center;
+    /* ALINEADO HORIZONTALMENTE,"MAIN AXIS" */
+    /*  justify-content: space-between; */
+    /* MAIN AXIS, MAIN EJE X,  */
+    align-items: center;
+    /* ALINEA EL ELEMENTO EN VERTICAL, EJE Y, CROSS AXIS */
+
+
 }
+
+/* caja logo */
 
 .contenedor__logo {
     width: 50%;
+    padding: 10px;
+    /* para que el logo se meta dentro del padre(queda comprimido) */
 }
 
-.logo__principal {
-    width: 95%;
-
-}
 
 .barra__cajancho {
     width: 50%;
+    /* paddin los hijos se acomodan adentro de su caja */
+    display: flex;
+    flex-wrap: wrap;
+    /*   padding: 10px; */
 
 }
 
-.barra__cajancho input {
-    position: relative;
-    padding: 1px;
+/* le cambie nombre */
+.input-barra__busqueda {
+    width: 120px;
     border: 0;
-}
-
-.barra__busqueda {
     height: 30px;
-    padding: 5px 4px;
-    border-radius: 5px 5px 5px 5px;
+    padding: 5px 10px 5px 4px;
+    /* arriba,derecha , abajo,izquierdo  */
+    border-radius: 5px 0 0 5px;
 }
 
 .barra__busqueda button {
+    width: 10%;
+    padding: 5px;
     position: absolute;
 }
 
 .lupa-menu {
+    width: 20px;
     background-color: white;
-    height: 25px;
-    margin-left: 90%;
+    height: 30px;
     border-radius: 0 5px 5px 0;
     border: none;
     color: var(--GrisOscuro);
-    position: relative;
-    top: -28px;
-    right: 0;
+    padding: 5px;
+
 }
 
-
-.contenedor-compra {
+.contenedor__compra {
     width: 100%;
-}
-
-.contenedor__padre p {
     text-align: center;
-}
-
-.icono__mano {
     font-size: var(--descripciones);
-
 }
-
-.lista__menu {
-    margin: 10px 0;
-    line-height: 20px;
-}
+ .lista__menu{
+    margin: 10px;
+    line-height: 20px;  
+    display: none;
+ }
 
 .menu__header li {
     list-style: none;
@@ -84,7 +85,7 @@ header {
 .menu__header li a {
     text-decoration: none;
     color: #1a1919;
-    display: none;
+
 
 }
 
@@ -113,96 +114,56 @@ header {
 /* --------ACÁ COMIENZA VISTA TABLET---------------- */
 
 
-@media(min-width:361px) {
-
-    /* tamaño de icono mano, canasto flecha y lupa */
-    /* traen un peso de 900 */
-    .fas {
-        font-size: 65%;
-    }
+@media(min-width:481px) {
 
 
     /* HEADER */
-    header {
-        width: 100%;
-    }
 
 
     /* CONTENEDOR DE LOS 3 */
     .contenedor__padre {
-        display: inline-block;
-        display: flex;
-        padding: 5px;
-    }
-
-    /* CAJA DEL LOGO */
-    .contenedor__padre .contenedor__logo {
-        width: 120px;
-    }
-
-    .logo__principal {
-        width: 72%;
-        padding: 20px 0 0 20px;
-    }
-
-    /* CAJA DE LA BARRA */
-    .barra__cajancho .barra__busqueda {
-        width:50%;
-
-    }
-    .barra__cajancho
-
-    .barra__busqueda {
-        /* margin-right: 118%; */
-        /* width: 190px; */
-        /* height: 15px; */
-    }
-
-    p .icono__mano {
-        width: 120px;
-        margin-left: 20px;
-    }
-
-    .lista__menu{
-        top: 28px;
-    }
-    .lupa-menu i{
-        margin-top: 5px;
-        height: 17px;
-        width: 17px;
-        cursor: pointer;
-
-    }
-
- 
-
-
-
-
-    .menu__header .lista__menu {
-        width: 100%;  
-        flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
     }
 
+    .contenedor__logo{
+        width: 35%;
+        padding: 15px 10px;
+        /* para que el logo se meta dentro del padre(queda comprimido) */
+    }
+
+    .barra__cajancho {
+        width: 30%;
+        /* paddin los hijos se acomodan adentro de su caja */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* BARRA BUSQUEDA */
+    .input-barra__busqueda{
+        width: 200px;
+    }
+  
+     .contenedor__compra {
+        width: 35%;
+    }
+ 
     .lista__menu {
-        margin: 5px 0;
+     display: flex;  
+     justify-content: space-between;
+    }
+
+    .menu__header{
+        display: flex;
+        gap: 10px;
     }
 
     .menu__header li {
         list-style: none;
-        line-height: 15px;
     }
 
     .menu__header li a {
         text-decoration: none;
         color: black;
-        display: flex;
-     
     }
-
-   
 
     .icono__burger i {
         display: none;
@@ -212,33 +173,23 @@ header {
 
 
 /* -----ACÁ COMIENZA LA VISTA DESKTOP -------*/
-@media(min-width: 769px) {
-
-    .icono__mano {
-        margin-left: 55%;
+@media(min-width:1024px) {
+ 
+    .contenedor__logo{
+        width: 30%;
     }
-
-    .barra__busqueda {
-        width: 40%;
-        height: 20px;
-    }
-
-    .lupa-menu {
-        margin-top: 5px;
-        margin-bottom: 10px;
-        margin-left: 1%;
-        height: 20px;
-        width: 19px;
-        cursor: pointer;
+    /* CAJA DE BARRA */
+    form.barra__cajancho{
+        width:30%;
+      
 
     }
-
-    .lupa-menu i {
-        padding: 0;
-        font-size: 10px
+    /* BARRA */
+    .input-barra__busqueda{
+        width: 322px;
+        gap:30px;
     }
-
-
+    
 
 
 }
