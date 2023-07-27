@@ -1,0 +1,75 @@
+.main__register {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.main__register input {
+    padding: 10px;
+}
+
+.main__register form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__register-usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main__register label {
+    font-family: var(--tipografiaMenu);
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+}
+
+.main__register-usuario-intereses {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.main__register-usuario-comprador-vendedor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.main__register-usuario-comprador-vendedor input {
+    margin-right: 45px;
+}
+
+.main__register-usuario-intereses input {
+    margin-right: 15px;
+}
+
+.main__register-titulo {
+    font-family: var(--tipografiaMenu);
+    padding: 15px;
+}
+
+
+button {
+
+    background-color: var(--Azul);
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+
+.main__register-button button {
+
+    color: white;
+    border: none;
+    font-size: 25px;
+    padding: 10px 20px;
+}

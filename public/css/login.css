@@ -1,0 +1,27 @@
+.main__login {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.main__login input {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.main__login-imput input {
+    margin-bottom: 45px;
+}
+
+.main__login button {
+    width: 900px;
+    background-color: var(--Celeste);
+    padding: 15px;
+    color: var(--Grisclaro);
+    border: none;
+    font-size: 20px;
+}
