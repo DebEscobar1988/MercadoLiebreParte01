@@ -1,12 +1,20 @@
 /* MAIN */
 main {
     background-color: var(--Grisclaro);
- border-bottom: solid 1px var(--Grisclaro); 
+    border-bottom: solid 1px var(--Grisclaro);
+    padding-bottom: 25px;
 }
 
-.main__contenedor-cuerpo {
-    width: 90%;
-    margin: 0 auto;
+/* h3 de productos */
+h3 {
+    font-size: var(--descripciones);
+    font-family: var(--tipografiaMenu);
+}
+
+/* h3 OFERTAS */
+.main__contenedor-precio h3 {
+    font-size: var(--cuerpos-de-texto);
+    padding-left: 10px;
 }
 
 .main__contenedor-banner {
@@ -15,28 +23,27 @@ main {
 
 .main__contenedor-banner img {
     width: 100%;
-
 }
 
+.main__contenedor-cuerpo {
+    width: 90%;
+    margin: 0 auto;
+}
 
 .main__contenedor--articulo-01 {
- margin-bottom: 10px; 
-
-padding: 0 15px;
+    margin-bottom: 30px;
 }
 
 .main__contenedor--articulo-02 {
-    margin-bottom: 10px;
-    padding: 0 15px;
+    margin-bottom: 30px;
 }
 
-h2 {
-    font-family: var(--tipografiaMenu);
-    font-size: var(--titulares);
-    color: var(--GrisOscuro);
-
+.main__contenedor-precio {
+    background-color: white;
+    padding: 15px;
+    border-top: solid 1px var(--Grisclaro);
+    position: relative;
 }
-
 
 .main__icono-carro {
     display: block;
@@ -53,103 +60,91 @@ h2 {
     background-color: #FFF;
 }
 
-/* no tocar */
 .main__icono-carro i {
-
-    color: var(--Verde);
-    font-size: 16px;
+    color: var(--Verde)
 }
 
-.main__contenedor-precio {
-    background-color: white;
-    padding: 15px;
-    border-top: solid 1px var(--Grisclaro);
-    position: relative;
+.articulo__box-precio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+
 }
 
+.main__precio {
+    width: 30%;
+    font-size: var(--descuentos);
+    /* error de tamaño tp */
+}
 
 .main__descuentos {
-  
-    font-size: var(--descuentos);
     color: var(--Verde);
 }
 
 
-/*------ ACÁ COMIENZA LA VISTA TABLET----------- */
+
+h2 {
+    font-family: var(--tipografiaMenu);
+    font-size: var(--titulares);
+    color: var(--GrisOscuro);
+}
+
+/*--------------- ACÁ COMIENZA LA VISTA TABLET----------- */
 
 
 @media(min-width:481px) {
 
     /* MAIN */
 
-
-    h3 {
-        display: block;
-        margin-top: 15px;
-        margin-left: 0;
-
+    /* h2 BASADO EN TU ÚLTIMA VISITA */
+    .main__contenedor-cuerpo h2 {
+        padding: 30px 0;
     }
 
     h2 {
         font-family: var(--tipografiaMenu);
         font-size: var(--titulares);
         color: var(--GrisOscuro);
-        margin-left: 15px;
+        width: 100%;
     }
 
+    .main__contenedor-cuerpo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     .main__contenedor--articulo-01 {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
     }
 
     .main__contenedor--articulo-02 {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        margin-bottom: 10px;
-        padding: 0 15px;
+        width: 40%;
     }
 
-    .main__icono-carro {
-        display: block;
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-        padding-right: 15px;
-        margin: 2px;
-        border-radius: 40px;
-        position: absolute;
-        right:20px;
-        top: -20px;
-        border: solid 1.5px #39b54a;
-        background-color: #FFF;
-    }
-    
-    /* no tocar */
-    .main__icono-carro i {
-    
-        color: var(--Verde);
-        font-size: 16px;
-    
-    }
 
-    .main__contenedor-precio {
-        background-color: white;
 
-        padding: 15px;
-        border-top: solid 1px var(--Grisclaro);
 
-    }
-
-    .main__precio {
-        font-size: var(--precios)
-    }
-
-    .main__descuentos {
-        font-size: var(--descuentos);
-        color: var(--Verde);
-    }
 
 
 }
 
 /* -----ACÁ COMIENZA LA VISTA DESKTOP -------*/
-@media(min-width: 769px) {}
+@media(min-width: 769px) {
+
+
+    .main__contenedor--articulo-01 {
+
+        width: 20%;
+    }
+
+    .main__contenedor--articulo-02 {
+
+        width: 20%;
+    }
+
+}

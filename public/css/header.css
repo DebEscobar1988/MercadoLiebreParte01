@@ -2,7 +2,7 @@
 header {
     width: 100%;
     background-color: #EAC926;
-    padding: 10px;
+    padding: 20px;
 }
 
 
@@ -11,13 +11,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* ALINEADO HORIZONTALMENTE,"MAIN AXIS" */
-    /*  justify-content: space-between; */
-    /* MAIN AXIS, MAIN EJE X,  */
     align-items: center;
-    /* ALINEA EL ELEMENTO EN VERTICAL, EJE Y, CROSS AXIS */
-
-
+    flex-direction: row;
 }
 
 /* caja logo */
@@ -25,16 +20,15 @@ header {
 .contenedor__logo {
     width: 50%;
     padding: 10px;
-    /* para que el logo se meta dentro del padre(queda comprimido) */
+    /* padding para que el logo quede comprimido) */
 }
 
 
-.barra__cajancho {
+.barra__cajaAncho {
     width: 50%;
-    /* paddin los hijos se acomodan adentro de su caja */
     display: flex;
     flex-wrap: wrap;
-    /*   padding: 10px; */
+
 
 }
 
@@ -70,11 +64,12 @@ header {
     text-align: center;
     font-size: var(--descripciones);
 }
- .lista__menu{
+
+.lista__menu {
     margin: 10px;
-    line-height: 20px;  
+    line-height: 20px;
     display: none;
- }
+}
 
 .menu__header li {
     list-style: none;
@@ -85,8 +80,6 @@ header {
 .menu__header li a {
     text-decoration: none;
     color: #1a1919;
-
-
 }
 
 .menu__header li a i {
@@ -125,33 +118,39 @@ header {
         justify-content: space-between;
     }
 
-    .contenedor__logo{
+    .contenedor__logo {
         width: 35%;
         padding: 15px 10px;
         /* para que el logo se meta dentro del padre(queda comprimido) */
     }
 
-    .barra__cajancho {
+    /*  */
+    .barra__cajaAncho {
         width: 30%;
         /* paddin los hijos se acomodan adentro de su caja */
         display: flex;
         flex-wrap: wrap;
     }
-    /* BARRA BUSQUEDA */
-    .input-barra__busqueda{
-        width: 200px;
-    }
-  
-     .contenedor__compra {
+
+    /* CONTENEDOR COMPRA-MANO */
+    .contenedor__compra {
         width: 35%;
     }
- 
-    .lista__menu {
-     display: flex;  
-     justify-content: space-between;
+
+
+    /* BARRA BUSQUEDA */
+    .input-barra__busqueda {
+        width: 170px;
     }
 
-    .menu__header{
+
+/* para separar a sus hijos ul */
+    .lista__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu__header {
         display: flex;
         gap: 10px;
     }
@@ -174,22 +173,27 @@ header {
 
 /* -----ACÁ COMIENZA LA VISTA DESKTOP -------*/
 @media(min-width:1024px) {
- 
-    .contenedor__logo{
-        width: 30%;
+
+    .contenedor__logo {
+        width: 35%;
     }
+
     /* CAJA DE BARRA */
-    form.barra__cajancho{
-        width:30%;
-      
+    form.barra__cajaAncho input{
+        gap: 10px;
+        width: 80%;
+
 
     }
-    /* BARRA */
-    .input-barra__busqueda{
-        width: 322px;
-        gap:30px;
+    .contenedor__compra{
+      width: 30%;
     }
-    
+ 
 
+/* AL FIN CRECIO EL CONTENEDOR COMPRA!! */
+    .contenedor__compra span{
+    font-size:17px;
+}
+  
 
 }

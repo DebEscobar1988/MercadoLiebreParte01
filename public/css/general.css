@@ -32,11 +32,6 @@ a {
     font-size: var(--cuerpos-de-texto);
 }
 
-h3 {
-    font-size: var(--descripciones);
-    color: var(--GrisOscuro);
-   
-}
 
 
 body{
