@@ -9,12 +9,14 @@ main {
 h3 {
     font-size: var(--descripciones);
     font-family: var(--tipografiaMenu);
+   margin-top: 10px;
 }
 
 /* h3 OFERTAS */
 .main__contenedor-precio h3 {
     font-size: var(--cuerpos-de-texto);
     padding-left: 10px;
+    display: none;
 }
 
 .main__contenedor-banner {
@@ -40,9 +42,11 @@ h3 {
 
 .main__contenedor-precio {
     background-color: white;
-    padding: 15px;
+    padding: 10px;
     border-top: solid 1px var(--Grisclaro);
     position: relative;
+    align-items: center;
+
 }
 
 .main__icono-carro {
@@ -59,18 +63,32 @@ h3 {
     border: solid 1.5px #39b54a;
     background-color: #FFF;
 }
+/* movimiento del carrito en 90grados */
+.main__icono-carro:hover {
+ animation:rotate 2s ease ;
+}
+@keyframes rotate {
+0%{
+    transform: rotate(0deg) ;
+}
+50%{
+    transform: rotate(-90deg);
+}
+100%{
+    transform: rotate(0deg);
+}
 
+}
 .main__icono-carro i {
     color: var(--Verde)
 }
 
 .articulo__box-precio {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
+    display: flex;  
+    gap: 6px;
+    padding: 0;
     align-items: center;
-
+    justify-content: space-between;
 }
 
 .main__precio {
@@ -81,6 +99,8 @@ h3 {
 
 .main__descuentos {
     color: var(--Verde);
+    font-size: var(--precios);
+    width:70% ; 
 }
 
 
@@ -94,7 +114,7 @@ h2 {
 /*--------------- ACÁ COMIENZA LA VISTA TABLET----------- */
 
 
-@media(min-width:481px) {
+@media(min-width:768px) {
 
     /* MAIN */
 
@@ -116,16 +136,43 @@ h2 {
         justify-content: space-between;
     }
 
+
+
+    /* transición de h3 en tarjetas 01 y 02 */
+    .main__contenedor--articulo-01:hover h3{
+        height: 20px;
+    }
+
+    .main__contenedor--articulo-02:hover h3{
+        height: 20px;  
+    }
+
+   
+    
+    .main__contenedor-precio h3{
+       display: block;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s ease;
+
+    }
+
+/* articulo 01 y 02 tienen un efecto de sombra al pasar el cursor por la tarjeta */
+    .main__contenedor--articulo-01:hover {
+    box-shadow: 0px 0px 15px rgb(100, 100, 100);
+    }
+
     .main__contenedor--articulo-01 {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 40%;
+       width: 45%;
+    }
+
+    .main__contenedor--articulo-02:hover {
+        box-shadow: 0px 0px 15px rgb(100, 100, 100);
     }
 
     .main__contenedor--articulo-02 {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 40%;
+        width: 45%;
     }
-
 
 
 
@@ -134,8 +181,33 @@ h2 {
 }
 
 /* -----ACÁ COMIENZA LA VISTA DESKTOP -------*/
-@media(min-width: 769px) {
+@media(min-width: 1024px) {
 
+   
+
+    .articulo__box-precio {
+        width: 100%;
+        display: flex;  
+        align-items: center;
+        justify-content: space-between;
+      
+    }
+    
+    .main__precio {
+        width: 70%;
+        font-size: var(--precios);
+        /* error de tamaño tp */
+    }
+    
+    .main__descuentos {
+        font-size: var(--descuentos);
+        color: var(--Verde);
+        width: 51% ; 
+        padding-bottom: 5px;
+    }
+    .main__contenedor-precio{
+        padding:15px;
+    }
 
     .main__contenedor--articulo-01 {
 

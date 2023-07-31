@@ -43,7 +43,7 @@ píxeles.
 
 }
 /* TABLE */
-@media(min-width: 481px){
+@media(min-width: 768px){
 
 
 
@@ -51,6 +51,44 @@ píxeles.
 }
 @media(min-width: 1024px){
 
+.footer{
+
+display:flex ;
+flex-wrap: wrap;
+justify-content: space-around;
+padding-left: 55px;
+}
+.footer__card i{
+    color: var(--azulButton);
+    width: 30%;
+    transition: background-color 0.3s ease;
+
+}
+.footer__card:hover i{
+color: var(--GrisOscuro);
+}
+.footer__gif i{
+    color: var(--azulButton);
+    transition: background-color 0.3s ease;
+    width: 30%;
+}
+.footer__gif:hover i{
+color: var(--GrisOscuro); 
+}
+
+.footer__segurity i{
+    color: var(--azulButton);
+    transition: background-color 0.3s ease;
+    width: 30%;
+}
+.footer__segurity:hover i{
+    color: var(--GrisOscuro); 
+}
+.footer__pie{
+ width: 100%;
+ text-align: left;
+
+}
 
 
 
